@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <title></title>
+</head>
+
+<body>
+  <header>
+<div class="container">
+  <nav>
+  <div class="logo">Naresh NB</div>
+ 
+  <i onclick="openMenu()" id="icon" class="fa fa-bars"></i>
+  <ul id="ul">
+   <div id="hide">
+   <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            </div>
+    </ul>
+  </nav>
+</div>
+  </header>
+  <section id="contact">
+  
+  <h1 id="h1">CONTACT</h1>
+  <div class="number">
+  <div class="email">
+   <span>EMAIL:</span>bhattarain538@gmail.com
+  <div class="nbr">
+   <span>NUMBER:</span>9869436906
+  </div>
+  </div>
+  </div>
+  <div class="msg">
+    Email Or Number:
+    <input placeholder="Please Enter Email Or Number..." id="txt"  type="text" required>
+    <textarea rows="20" cols="40" placeholder="please enter your message...."></textarea>
+    <button>SUBMIT</button>
+  </div>
+ 
+</section>
+<script>
+let lnk=document.getElementById("hide");
+let icon= document.getElementById("icon");
+
+   function openMenu() {
+  var x = document.getElementById("ul");
+  if (x.style.left === "100vw") {
+    x.style.left = "60vw";
+    icon.classList.replace("fa-bars","fa-close");
+   
+    
+  } else {
+    x.style.left = "100vw";
+        icon.classList.replace("fa-close","fa-bars");
+       
+        
+  }
+}
+  
+
+  
+  var options = {
+  strings: ['YOUTUBER','BLOGER','CODER','GAMER'],
+  typeSpeed: 140,
+  backSpeed:140,
+  loop:true
+};
+
+var typed = new Typed('.element', options);
+
+
+</script>
+</body>
+</html>
